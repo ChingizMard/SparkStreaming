@@ -1,8 +1,12 @@
-import org.apache.spark
 import org.apache.spark.{SparkConf, SparkContext, streaming}
-import org.apache.spark.sql.SparkSession
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+
+/*
+This is the netcat to start the socket:
+nc -l 127.0.0.1 2222
+ */
+
 
 object HelloWorld {
 
